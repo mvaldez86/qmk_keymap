@@ -38,3 +38,9 @@ jobs:
           *.hex
           *.bin
           *.uf2
+          
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v3.0.2
+      with:
+        name: my-artifact
+        path: ~/qmk_keymap
